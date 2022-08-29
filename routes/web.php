@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\SecondPostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +28,11 @@ Route::prefix('auth')->group(function() {
 
 Route::middleware('auth')->group(function() {
     Route::resource('dashboard', PostController::class);
+    Route::get('create/second/form', [SecondPostController::class, 'create']);
+    Route::post('send/form', [SecondPostController::class, 'store']);
+
+    Route::get('edit/second/form/{id}', [SecondPostController::class, 'edit']);
+    Route::put('send/edit/form/{id}', [SecondPostController::class, 'updateForm']);
+
+    Route::delete('delete/{id}', [SecondPostController::class, 'destroy']);
 });

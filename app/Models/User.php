@@ -45,4 +45,8 @@ class User extends Authenticatable
     public function posts() {
         return $this->hasOne(Post::class);
     }
+
+    public function secondPosts() {
+        return $this->hasOne(Post::class);
+    }
 }

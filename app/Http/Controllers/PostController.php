@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\User;
+use App\Models\SecondPost;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -16,7 +17,8 @@ class PostController extends Controller
     public function index()
     {
         return view('dashboard.index', [
-            'userPosts' => Post::with('users')->where('user_id', auth()->user()->id)->get()
+            'userPosts' => Post::with('users')->where('user_id', auth()->user()->id)->get(),
+            'secondPosts' => SecondPost::with('users')->where('user_id', auth()->user()->id)->get()
         ]);
     }
 
