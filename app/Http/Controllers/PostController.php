@@ -3,9 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Salary;
 use App\Models\User;
+use App\Models\DataWorker;
 use App\Models\SecondPost;
+use App\Models\PowerAndWeak;
 use Illuminate\Http\Request;
+use App\Models\PostCommunity;
+use App\Models\InterestAndHope;
+use App\Models\HistoryEducation;
+use App\Models\EducationNonFormal;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -17,8 +25,15 @@ class PostController extends Controller
     public function index()
     {
         return view('dashboard.index', [
-            'userPosts' => Post::with('users')->where('user_id', auth()->user()->id)->get(),
-            'secondPosts' => SecondPost::with('users')->where('user_id', auth()->user()->id)->get()
+            'userPosts' => Post::with('users')->where('user_id', Auth::id())->first(),
+            'secondPosts' => SecondPost::with('users')->where('user_id', Auth::id())->get(),
+            'postCommunity' => PostCommunity::where('user_id', Auth::id())->first(),
+            'history' => HistoryEducation::where('user_id', Auth::id())->first(),
+            'edu' => EducationNonFormal::where('user_id', Auth::id())->first(),
+            'worker' => DataWorker::where('user_id', Auth::id())->first(),
+            'io' => InterestAndHope::where('user_id', Auth::id())->first(),
+            'pw' => PowerAndWeak::where('user_id', Auth::id())->first(),
+            'salary' => Salary::where('user_id', Auth::id())->first(),
         ]);
     }
 

@@ -2,11 +2,18 @@
 
 namespace App\Models;
 
+use App\Models\Salary;
+use App\Models\DataWorker;
+use App\Models\PowerAndWeak;
+use App\Models\PostCommunity;
+use App\Models\InterestAndHope;
+use App\Models\HistoryEducation;
+use Laravel\Sanctum\HasApiTokens;
+use App\Models\EducationNonFormal;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
@@ -47,6 +54,34 @@ class User extends Authenticatable
     }
 
     public function secondPosts() {
-        return $this->hasOne(Post::class);
+        return $this->hasOne(SecondPost::class);
+    }
+
+    public function historyPosts() {
+        return $this->hasOne(HistoryEducation::class);
+    }
+
+    public function educationNonFormal() {
+        return $this->hasOne(EducationNonFormal::class);
+    }
+
+    public function postDataWorker() {
+        return $this->hasOne(DataWorker::class);
+    }
+
+    public function postCommunities() {
+        return $this->hasOne(PostCommunity::class);
+    }
+
+    public function IOPost() {
+        return $this->hasOne(InterestAndHope::class);
+    }
+
+    public function PWPost() {
+        return $this->hasOne(PowerAndWeak::class);
+    }
+
+    public function salary() {
+        return $this->hasOne(Salary::class);
     }
 }

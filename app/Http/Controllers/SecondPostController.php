@@ -37,17 +37,21 @@ class SecondPostController extends Controller
     {
         $validating = $request->validate([
             'ayah' => 'required',
+            'gender' => 'required',
+            'tempat' => 'required',
+            'tgl_lahir' => 'required',
+            'pendidikan' => 'required',
+            'pekerjaan' => 'required',
             'ibu'    => 'required',
-            'anak1' => 'required',
-            'anak2'  => 'required',
-            'anak3' => 'required',
-            'anak4' => 'required',
-            'anak5' => 'required',
-            'anak6' => 'required',
-            'anak7' => 'required',
+            'gender_ibu' => 'required',
+            'tempat_ibu' => 'required',
+            'tgl_lahir_ibu' => 'required',
+            'pendidikan_ibu' => 'required',
+            'pekerjaan_ibu' => 'required',
         ]);
-        $validating['user_id'] = auth()->user()->id;
-        SecondPost::create($validating);
+
+        auth()->user()->secondPosts()->create($request->all());
+
         return redirect('/dashboard')->with('create', 'Form Sukses Di Publish');
     }
 
@@ -68,9 +72,10 @@ class SecondPostController extends Controller
      * @param  \App\Models\SecondPost  $secondPost
      * @return \Illuminate\Http\Response
      */
-    public function edit(SecondPost $id)
+    public function edit($id)
     {
-        return view('secondPost.edit', ['secondPost' => $id]);
+        $dataFamily = SecondPost::where('id', $id)->first();
+        return view('secondPost.edit', ['post' => $dataFamily]);
     }
 
     /**
@@ -84,18 +89,21 @@ class SecondPostController extends Controller
     {
         $validating = $request->validate([
             'ayah' => 'required',
+            'gender' => 'required',
+            'tempat' => 'required',
+            'tgl_lahir' => 'required',
+            'pendidikan' => 'required',
+            'pekerjaan' => 'required',
             'ibu'    => 'required',
-            'anak1' => 'required',
-            'anak2'  => 'required',
-            'anak3' => 'required',
-            'anak4' => 'required',
-            'anak5' => 'required',
-            'anak6' => 'required',
-            'anak7' => 'required',
+            'gender_ibu' => 'required',
+            'tempat_ibu' => 'required',
+            'tgl_lahir_ibu' => 'required',
+            'pendidikan_ibu' => 'required',
+            'pekerjaan_ibu' => 'required',
         ]);
-        $validating['user_id'] = auth()->user()->id;
 
-        $isUpdated = SecondPost::where('user_id', auth()->user()->id)->update($validating);
+        auth()->user()->secondPosts()->update($request->except(['_token', '_method']));
+
         return redirect('/dashboard')->with('update', 'Form Sukses Di Update');
     }
 
