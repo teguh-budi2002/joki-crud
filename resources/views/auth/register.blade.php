@@ -19,6 +19,9 @@
                 <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="email"
                     placeholder="Email">
 
+                <input type="text" class="block border border-grey-light w-full p-3 rounded mb-4" name="tmpt_tinggal"
+                    placeholder="Tempat Tinggal">
+
                 <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4" name="password"
                     placeholder="Password">
                 <input type="password" class="block border border-grey-light w-full p-3 rounded mb-4"

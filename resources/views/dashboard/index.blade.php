@@ -41,7 +41,7 @@
             </div>
         </div>
     </div>
-    @if ($userPosts->count())
+    @if (!is_null($userPosts))
     <div class="button-edit flex space-x-4 items-center text-center mt-5">
         <a href="{{ url('dashboard/' . $userPosts->nama . '/edit') }}"
             class="py-3 px-6 rounded-full bg-orange-500 hover:bg-orange-400 text-white">EDIT DATA DIRI</a>
@@ -52,7 +52,6 @@
                 onclick="return(confirm('Yakin mau hapus data?'))">DELETE DATA?</button>
         </form>
     </div>
-
     <div class="overflow-x-auto shadow-md shadow-gray-400 mx-5 relative mt-5">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -695,7 +694,6 @@
         </div>
         @endif
     </div>
-
     @else
     <div class="bg-white w-3/4 p-2 mt-2 text-center rounded-md shadow-md shadow-gray-500">
         <span class="text-gray-500 text-xl">BELUM ADA DATA DIRI</span>
@@ -840,8 +838,8 @@
     <div class="mt-5 mb-10 w-full">
         <div class="button-answer-2 text-center mb-5">
             <a href="{{ URL('power/and/weak/create') }}"
-            class="py-2.5 px-6 rounded-full outline outline-violet-700 hover:bg-violet-700 hover:text-white">JAWAB
-            PERTANYAAN</a>
+                class="py-2.5 px-6 rounded-full outline outline-violet-700 hover:bg-violet-700 hover:text-white">JAWAB
+                PERTANYAAN</a>
         </div>
         @if (!is_null($pw))
         <div class="flex justify-center items-center space-x-4 mb-5">
@@ -863,11 +861,12 @@
                 </div>
                 <div class="QnA2 indent-8 text-sm text-gray-500">
                     <p>1.) Apa yang menjadi kekuatan diri/pribadi anda?</p>
-                    <p><b>JAWAB:</b>  {{ $pw->answer1 }}</p>
+                    <p><b>JAWAB:</b> {{ $pw->answer1 }}</p>
                     <p>2.) Apa yang menjadi kelemahan diri/pribadi anda?</p>
-                    <p><b>JAWAB:</b>  {{ $pw->answer2 }}</p>
-                    <p>3.) Dari kekuatan dan kelemahan anda diatas, sebutkan hal apa yang paling menggambarkan diri anda</p>
-                    <p><b>JAWAB:</b>  {{ $pw->answer3 }}</p>
+                    <p><b>JAWAB:</b> {{ $pw->answer2 }}</p>
+                    <p>3.) Dari kekuatan dan kelemahan anda diatas, sebutkan hal apa yang paling menggambarkan diri anda
+                    </p>
+                    <p><b>JAWAB:</b> {{ $pw->answer3 }}</p>
                 </div>
             </div>
         </div>
@@ -882,7 +881,8 @@
                     <p><b>JAWAB:</b></p>
                     <p>2.) Apa yang menjadi kelemahan diri/pribadi anda?</p>
                     <p><b>JAWAB:</b></p>
-                    <p>3.) Dari kekuatan dan kelemahan anda diatas, sebutkan hal apa yang paling menggambarkan diri anda</p>
+                    <p>3.) Dari kekuatan dan kelemahan anda diatas, sebutkan hal apa yang paling menggambarkan diri anda
+                    </p>
                     <p><b>JAWAB:</b></p>
                 </div>
             </div>
@@ -892,8 +892,8 @@
     <div class="mt-5 mb-10 w-full">
         <div class="button-create-salary text-center mb-5">
             <a href="{{ URL('salary/create') }}"
-            class="py-2.5 px-6 rounded-full outline outline-gray-700 hover:bg-gray-700 hover:text-white">JAWAB
-            PERTANYAAN</a>
+                class="py-2.5 px-6 rounded-full outline outline-gray-700 hover:bg-gray-700 hover:text-white">JAWAB
+                PERTANYAAN</a>
         </div>
         @if (!is_null($salary))
         <div class="flex justify-center items-center space-x-4 mb-5">
@@ -911,7 +911,7 @@
         <div class="flex justify-center">
             <div class="w-2/3 shadow-md shadow-gray-400 bg-white p-2">
                 <div class="text-title-3">
-                    <p class="text-xl text-gray-700">GAJI YANG DIHARAPKAN:  {{ $salary->salary }}</p>
+                    <p class="text-xl text-gray-700">GAJI YANG DIHARAPKAN: {{ $salary->salary }}</p>
                 </div>
             </div>
         </div>
@@ -929,7 +929,7 @@
                 <div class="text-statement mb-5">
                     <p>Demikian, data pribadi ini saya buat sesuai dengan kondisi yang sesungguhnya</p>
                 </div>
-                <p>{{ $userPosts->tempat_lahir }},tgl {{ auth()->user()->created_at->format('d F Y') }}</p>
+                <p>{{ auth()->user()->tmpt_tinggal }},tgl {{ auth()->user()->created_at->format('d F Y') }}</p>
                 <div class="ttd-img mt-3">
                     <img src="{{ asset('/img/TTD.png') }}" class="w-64 h-40" alt="ttd logo">
                 </div>

@@ -15,27 +15,27 @@
                         <label for="jurusan" class="block mb-2 text-sm font-medium text-gray-900">Jurusan</label>
                         <input type="text" name="jurusan" id="jurusan"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="kota" class="block mb-2 text-sm font-medium text-gray-900">Kota</label>
                         <input type="text" name="kota" id="kota"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_mulai" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Mulai</label>
                         <input type="text" name="tahun_mulai" id="tahun_mulai"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_akhir" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Selesai</label>
                         <input type="text" name="tahun_akhir" id="tahun_akhir"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                 </div>
                 <div class="smp">
@@ -49,27 +49,27 @@
                             SMP</label>
                         <input type="text" name="jurusan_smp" id="jurusan_smp"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="kota_smp" class="block mb-2 text-sm font-medium text-gray-900">Kota</label>
                         <input type="text" name="kota_smp" id="kota_smp"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_mulai_smp" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Mulai</label>
                         <input type="text" name="tahun_mulai_smp" id="tahun_mulai_smp"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_akhir_smp" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Selesai</label>
                         <input type="text" name="tahun_akhir_smp" id="tahun_akhir_smp"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                 </div>
             </div>
@@ -87,27 +87,27 @@
                             SLTA</label>
                         <input type="text" name="jurusan_slta" id="jurusan_slta"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="kota_slta" class="block mb-2 text-sm font-medium text-gray-900">Kota</label>
                         <input type="text" name="kota_slta" id="kota_slta"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_mulai_slta" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Mulai</label>
                         <input type="text" name="tahun_mulai_slta" id="tahun_mulai_slta"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_akhir_slta" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Selesai</label>
                         <input type="text" name="tahun_akhir_slta" id="tahun_akhir_slta"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                 </div>
                 <div class="d-3">
@@ -121,27 +121,27 @@
                         <label for="jurusan_d3" class="block mb-2 text-sm font-medium text-gray-900">Jurusan</label>
                         <input type="text" name="jurusan_d3" id="jurusan_d3"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="kota_d3" class="block mb-2 text-sm font-medium text-gray-900">Kota</label>
                         <input type="text" name="kota_d3" id="kota_d3"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_mulai_d3" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Mulai</label>
                         <input type="text" name="tahun_mulai_d3" id="tahun_mulai_d3"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_akhir_d3" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Selesai</label>
                         <input type="text" name="tahun_akhir_d3" id="tahun_akhir_d3"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                 </div>
             </div>
@@ -157,27 +157,27 @@
                         <label for="jurusan_s1" class="block mb-2 text-sm font-medium text-gray-900">Jurusan S1</label>
                         <input type="text" name="jurusan_s1" id="jurusan_s1"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="kota_s1" class="block mb-2 text-sm font-medium text-gray-900">Kota</label>
                         <input type="text" name="kota_s1" id="kota_s1"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_mulai_s1" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Mulai</label>
                         <input type="text" name="tahun_mulai_s1" id="tahun_mulai_s1"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_akhir_s1" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Selesai</label>
                         <input type="text" name="tahun_akhir_s1" id="tahun_akhir_s1"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                 </div>
                 <div class="d-3">
@@ -190,27 +190,27 @@
                         <label for="jurusan_s2" class="block mb-2 text-sm font-medium text-gray-900">Jurusan</label>
                         <input type="text" name="jurusan_s2" id="jurusan_s2"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="kota_s2" class="block mb-2 text-sm font-medium text-gray-900">Kota</label>
                         <input type="text" name="kota_s2" id="kota_s2"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_mulai_s2" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Mulai</label>
                         <input type="text" name="tahun_mulai_s2" id="tahun_mulai_s2"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                     <div class="mb-6">
                         <label for="tahun_akhir_s2" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                             Selesai</label>
                         <input type="text" name="tahun_akhir_s2" id="tahun_akhir_s2"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                            required>
+>
                     </div>
                 </div>
             </div>
@@ -224,27 +224,23 @@
                 <div class="mb-6">
                     <label for="jurusan_s3" class="block mb-2 text-sm font-medium text-gray-900">Jurusan</label>
                     <input type="text" name="jurusan_s3" id="jurusan_s3"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                        required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600">
                 </div>
                 <div class="mb-6">
                     <label for="kota_s3" class="block mb-2 text-sm font-medium text-gray-900">Kota</label>
                     <input type="text" name="kota_s3" id="kota_s3"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                        required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600">
                 </div>
                 <div class="mb-6">
                     <label for="tahun_mulai_s3" class="block mb-2 text-sm font-medium text-gray-900">Tahun Mulai</label>
                     <input type="text" name="tahun_mulai_s3" id="tahun_mulai_s3"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                        required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600">
                 </div>
                 <div class="mb-6">
                     <label for="tahun_akhir_s3" class="block mb-2 text-sm font-medium text-gray-900">Tahun
                         Selesai</label>
                     <input type="text" name="tahun_akhir_s3" id="tahun_akhir_s3"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600"
-                        required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600">
                 </div>
             </div>
             <div class="text-center">
