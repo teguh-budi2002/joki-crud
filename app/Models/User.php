@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Salary;
+use App\Models\CoreFamily;
 use App\Models\DataWorker;
 use App\Models\PowerAndWeak;
 use App\Models\PostCommunity;
@@ -70,7 +71,7 @@ class User extends Authenticatable
         return $this->hasOne(DataWorker::class);
     }
 
-    public function postCommunities() {
+    public function postCommunity() {
         return $this->hasOne(PostCommunity::class);
     }
 
@@ -84,5 +85,9 @@ class User extends Authenticatable
 
     public function salary() {
         return $this->hasOne(Salary::class);
+    }
+
+    public function coreFamily() {
+        return $this->hasOne(CoreFamily::class);
     }
 }

@@ -366,6 +366,182 @@
         </table>
     </div>
     @endforeach
+    <div class="mt-6 w-3/4">
+        <div class="create-button text-center mb-4">
+            <a href="{{ URL('core/create') }}"
+                class="py-2.5 px-6 rounded-full outline outline-orange-500 hover:bg-orange-500 hover:text-white">ISI
+                FORM
+                KELUARGA INTI</a>
+        </div>
+        @if (!is_null($core))
+        <div class="mt-5 mb-5 flex justify-center space-x-5">
+            <a href="{{ URL('core/' . $core->id . '/edit') }}"
+                class="py-2.5 px-6 rounded-full outline outline-black hover:bg-black hover:text-white">EDIT FORM
+                KELUARGA INTI</a>
+            <form action="{{ url('core/' . $core->id) }}" method="post">
+                @csrf
+                @method('DELETE')
+                <button type="submit"
+                    class="py-2.5 px-6 rounded-full outline outline-red-900 hover:bg-red-900 hover:text-white">DELETE
+                    FORM KELUARGA INTI</button>
+            </form>
+        </div>
+        <div class="overflow-x-auto relative">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">
+                            #
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Nama
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            L/P
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Tempat/Tanggal Lahir
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Pendidikan
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                            Pekerjaan
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Istri/Suami
+                        </th>
+                        <th scope="row" class="py-4 px-6">
+                            {{ $core->couple }}
+                        </th>
+                        <td class="py-4 px-6">
+                            {{ $core->jns_klmn }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->tmpt_lhr }}/{{ $core->tgl_lhr }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pendidikan }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pekerjaan }}
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Anak1
+                        </th>
+                        <th scope="row" class="py-4 px-6">
+                            {{ $core->anak1 }}
+                        </th>
+                        <td class="py-4 px-6">
+                            {{ $core->jns_klmn_anak1 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->tmpt_lhr_anak1 }}/{{ $core->tgl_lhr_anak1 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pendidikan_anak1 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pekerjaan_anak1 }}
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Anak2
+                        </th>
+                        <th scope="row" class="py-4 px-6">
+                            {{ $core->anak2 }}
+                        </th>
+                        <td class="py-4 px-6">
+                            {{ $core->jns_klmn_anak2 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->tmpt_lhr_anak2 }}/{{ $core->tgl_lhr_anak2 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pendidikan_anak2 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pekerjaan_anak2 }}
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Anak3
+                        </th>
+                        <th scope="row" class="py-4 px-6">
+                            {{ $core->anak3 }}
+                        </th>
+                        <td class="py-4 px-6">
+                            {{ $core->jns_klmn_anak3 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->tmpt_lhr_anak3 }}/{{ $core->tgl_lhr_anak3 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pendidikan_anak3 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pekerjaan_anak3 }}
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Anak4
+                        </th>
+                        <th scope="row" class="py-4 px-6">
+                            {{ $core->anak4 }}
+                        </th>
+                        <td class="py-4 px-6">
+                            {{ $core->jns_klmn_anak4 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->tmpt_lhr_anak4 }}/{{ $core->tgl_lhr_anak4 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pendidikan_anak4 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pekerjaan_anak4 }}
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            Anak5
+                        </th>
+                        <th scope="row" class="py-4 px-6">
+                            {{ $core->anak5 }}
+                        </th>
+                        <td class="py-4 px-6">
+                            {{ $core->jns_klmn_anak5 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->tmpt_lhr_anak5 }}/{{ $core->tgl_lhr_anak5 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pendidikan_anak5 }}
+                        </td>
+                        <td class="py-4 px-6">
+                            {{ $core->pekerjaan_anak5 }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        @else
+        <div class="flex justify-center mt-5">
+            <div class="w-3/4 bg-white p-2 shadow-md shadow-gray-400 rounded text-center">
+                <p class="text-xl text-gray-500">Belum Ada Data Mengenai Keluarga Inti</p>
+            </div>
+        </div>
+        @endif
+    </div>
     <div class="mb-8 w-3/4 mt-5">
         <div class="text-header text-center mb-8">
             <p class="mb-4">ISI FORM RIWAYAT PENDIDIKAN</p>

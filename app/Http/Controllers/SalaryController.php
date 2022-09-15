@@ -84,7 +84,7 @@ class SalaryController extends Controller
      */
     public function destroy(Salary $salary)
     {
-        InterestAndHope::where('user_id', auth()->user()->id)->delete();
+        Salary::where('user_id', auth()->user()->id)->delete();
 
         return redirect()->back()->with('delete', 'Jawabanmu Sukses Di Hapus');
     }

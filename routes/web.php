@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\SalaryController;
+use App\Http\Controllers\CoreFamilyController;
 use App\Http\Controllers\DataWorkerController;
 use App\Http\Controllers\SecondPostController;
 use App\Http\Controllers\PowerAndWeakController;
@@ -68,5 +69,8 @@ Route::middleware('auth')->group(function() {
 
     //Salary
     Route::resource('salary', SalaryController::class);
+
+    // Core Family
+    Route::resource('core', CoreFamilyController::class);
 
 });

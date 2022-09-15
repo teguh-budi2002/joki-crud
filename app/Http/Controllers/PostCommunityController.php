@@ -42,7 +42,7 @@ class PostCommunityController extends Controller
            'jabtan' => 'required'
        ]);
 
-       auth()->user()->postCommunities()->create($request->all());
+       auth()->user()->postCommunity()->create($request->all());
 
        return redirect('dashboard')->with('create', 'Form Sukses Di Publish');
     }
@@ -84,7 +84,7 @@ class PostCommunityController extends Controller
             'jabtan' => 'required'
         ]);
 
-        auth()->user()->postCommunities()->update($request->except(['_token', '_method']));
+        auth()->user()->postCommunity()->update($request->except(['_token', '_method']));
 
         return redirect('dashboard')->with('update', 'Form Sukses Di Update');
     }

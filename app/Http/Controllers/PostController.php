@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use App\Models\Salary;
 use App\Models\User;
+use App\Models\Salary;
+use App\Models\CoreFamily;
 use App\Models\DataWorker;
 use App\Models\SecondPost;
 use App\Models\PowerAndWeak;
@@ -24,8 +25,6 @@ class PostController extends Controller
      */
     public function index()
     {
-        $getHomeInfo = array();
-        $getHomeInfo = Post::where('user_id', auth()->user()->id)->first();
         return view('dashboard.index', [
             'userPosts' => Post::with('users')->where('user_id', Auth::id())->first(),
             'secondPosts' => SecondPost::with('users')->where('user_id', Auth::id())->get(),
@@ -36,7 +35,7 @@ class PostController extends Controller
             'io' => InterestAndHope::where('user_id', Auth::id())->first(),
             'pw' => PowerAndWeak::where('user_id', Auth::id())->first(),
             'salary' => Salary::where('user_id', Auth::id())->first(),
-            'tmpt_lahir' => $getHomeInfo
+            'core' => CoreFamily::where('user_id', Auth::id())->first()
         ]);
     }
 
